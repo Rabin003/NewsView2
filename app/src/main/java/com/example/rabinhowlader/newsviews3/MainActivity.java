@@ -1,5 +1,6 @@
 package com.example.rabinhowlader.newsviews3;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -29,10 +30,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = new Intent(MainActivity.this,DetailActivity.class);
+        startActivity(intent);
 
         recyclerView =(RecyclerView)findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         setUpToolbar();
+
 
         navigationView =(NavigationView)findViewById(R.id.navigation_id);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -77,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<News> call, Response<News> response) {
                 News list =response.body();
-                //recyclerView.setAdapter(new NewsAdapter(MainActivity.this,list.getArticles()));
+                recyclerView.setAdapter(new NewsAdapter(MainActivity.this,list.getArticles()));
                 Toast.makeText(MainActivity.this,"Success",Toast.LENGTH_SHORT).show();
             }
 

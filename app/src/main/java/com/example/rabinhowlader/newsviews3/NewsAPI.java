@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 
 public class NewsAPI {
-    private static final String key ="a55f2408baa54c2ab6303d6e8476d80d";
+    private static final String key ="33b011ee932c4275a0d99cb663a0f24e";
     private static final String url="https://newsapi.org/v2/everything/";
 
     public static PostService postService = null;
@@ -27,7 +27,11 @@ public class NewsAPI {
     }
 
     public interface PostService{
-        @GET("?key="+key)
+        @GET("?q=bitcoin&from=2018-11-30&sortBy=publishedAt&apiKey=33b011ee932c4275a0d99cb663a0f24e" )
         Call<News> getPostList();
+
+
     }
-}
+
+    }
+

@@ -11,6 +11,25 @@
        android:padding="16dp"
         android:orientation="vertical"
         >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postArticle"
+            android:ellipsize="end"
+            android:maxLines="1"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="20dp"
+            android:text="This is Article of the post.You can see that"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postUrl"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:ellipsize="end"
+            android:text="this is post url"
+            android:maxLines="1"
+            android:layout_marginTop="8dp"/>
         
         <ImageView
             android:id="@+id/postImage"
@@ -18,6 +37,7 @@
             android:layout_height="180dp"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"/>
+
         <TextView
             android:id="@+id/postTitle"
             android:layout_width="match_parent"
@@ -36,6 +56,15 @@
             style="@style/TextAppearance.AppCompat.Body2"
             android:text="This is tite of the post.You can see that"
             android:layout_marginTop="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postDate"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginTop="8dp"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="This is post date"/>
 
     </LinearLayout>
 

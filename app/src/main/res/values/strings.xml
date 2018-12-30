@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NewsViews3</string>
+    <string name="app_name">NewsViewsV2</string>
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,6 +8,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="home">Home</string>
+    <string name="search">Search</string>
     <string name="about">About</string>
     <string name="exit">Exit</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
 </resources>

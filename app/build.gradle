@@ -48,5 +48,6 @@ dependencies {
 
     //adding paging
     implementation "android.arch.paging:runtime:1.0.0"
+    implementation 'org.jsoup:jsoup:1.10.1'
 
 }

@@ -1,5 +1,7 @@
 package com.example.rabinhowlader.newsviews3;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -9,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -66,6 +69,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.search_menu,menu);
+       // SearchView searchView =(SearchView) menu.findItem(R.id.search);
+        //SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        //searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+       // searchView.setMaxWidth(Integer.MAX_VALUE);
+        // listening to search query text change
+        //searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+         //   @Override
+          //  public boolean onQueryTextSubmit(String query) {
+                // filter recycler view when query submitted
+
+         //       return false;
+          //  }
+
+           // @Override
+          //  public boolean onQueryTextChange(String query) {
+                // filter recycler view when text is changed
+
+             //   return false;
+        //    }
+       // });
         return true;
     }
 

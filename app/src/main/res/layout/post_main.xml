@@ -66,6 +66,8 @@
             style="@style/Base.TextAppearance.AppCompat.Large"
             android:text="This is post date"/>
 
+
     </LinearLayout>
 
 </android.support.v7.widget.CardView>
+

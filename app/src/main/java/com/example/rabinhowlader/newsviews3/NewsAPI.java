@@ -1,6 +1,7 @@
 package com.example.rabinhowlader.newsviews3;
 
 import com.example.rabinhowlader.newsviews3.model.News;
+import com.example.rabinhowlader.newsviews3.model.Number;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;
@@ -30,8 +31,13 @@ public class NewsAPI {
         @GET("?q=bitcoin&from=2018-11-30&sortBy=publishedAt&apiKey=33b011ee932c4275a0d99cb663a0f24e" )
         Call<News> getPostList();
 
+        @GET("?q=apple&from=2018-12-29&to=2018-12-29&sortBy=popularity&apiKey=33b011ee932c4275a0d99cb663a0f24e" )
+        Call<News> getList();
+
 
     }
 
+
     }
+
 
